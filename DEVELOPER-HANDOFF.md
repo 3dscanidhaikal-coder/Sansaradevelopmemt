@@ -1,6 +1,6 @@
 # Sansara website developer handoff
 
-Snapshot: 15 October 2026 (Asia/Makassar).
+Snapshot: 18 October 2026 (Asia/Makassar).
 
 ## Run
 Static HTML, CSS and vanilla JavaScript; no package install or build is required.
@@ -9,7 +9,7 @@ For static hosting, deploy all HTML, CSS, JavaScript and assets together while p
 External services: Google Fonts, Tailwind CDN, Leaflet CDN and OpenStreetMap tiles.
 
 ## Structure
-- index.html: homepage, project highlights, Bali map, FAQ and consultation CTA.
+- index.html: homepage, project highlights, Bali map, amenities, FAQ and consultation CTA.
 - about.html: company, world map/statistics, experience and consultation CTA.
 - projects.html: Phase 1/Phase 2 carousel and project cards.
 - residences.html: residence category filters and shared residence links.
@@ -38,4 +38,10 @@ The four largest project images are web-sized copies in this package/GitHub; ori
 
 ## Before launch
 Confirm final dates, availability, pricing, legal/privacy copy and translations with the owner. Approved figures and property specifications in this snapshot came from the owner's supplied references. Some image sets remain shared illustrations.
-Latest updates: homepage River Surf opens the gallery; white side arrows; blue FAQ followed by the Bali map; technical features integrated into The Sansara Way with staggered reveals. The former amenities section is preserved in archive/features-amenities/. About statistics appear under the world map and count up on entry.
+## Latest handoff
+- Homepage Bali location map now appears before the FAQ.
+- Phase 2 three-bedroom villa Type 2 removed from listings and recommendations; old detail URLs redirect to the Phase 2 collection.
+- Phase 1 villas: five interior images each from their Compressed Interiors folders. Villa Type 3 folder is now Villa 234m.
+- Phase 1 apartments: supplied thumbnail and five interiors shared between the 40 and 50 m² pages.
+- Phase 2 studio apartments: supplied thumbnail and five interiors. Other Phase 2 residence interiors still await updating.
+- Archived amenities section: archive/features-amenities/.

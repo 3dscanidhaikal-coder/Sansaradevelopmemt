@@ -107,7 +107,6 @@ const residences = {
     { name: 'One-bedroom villa', area: 47.7, quantity:14, bedrooms: 1, floors: 1, bathrooms: 1, pool: '7.5 m² private pool', extras: 'Kitchen-living room · Terrace with seating · Ocean view' },
     { name: '2-bedroom villa · Type 1', area: 104, quantity:11, bedrooms: 2, floors: 2, bathrooms: 2, guestWC:true, pool: '11.7 m² private pool', extras: 'Kitchen-living room · Guest WC · Terrace with relaxation area · Lower-level pool · Ocean view' },
     { name: '3-bedroom villa · Type 1', area: 167, quantity:7, bedrooms: 3, floors: 3, bathrooms: 3, guestWC:true, pool: '12 m² lower-level pool + 12.2 m² upper-level pool', extras: 'Kitchen-living room · Guest WC · Terrace with relaxation area · Balcony · Ocean view' },
-    { name: '3-bedroom villa · Type 2', area: 121, quantity:1, bedrooms: 3, floors: 2, bathrooms: 3, guestWC:true, pool: '11.7 m² private pool', extras: 'Kitchen-living room · Guest WC · Terrace with relaxation area · Ocean view' }
   ]
 };
 // Homepage unit cards follow the updated Solvyn City project naming.

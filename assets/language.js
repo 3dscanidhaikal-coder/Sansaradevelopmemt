@@ -469,6 +469,7 @@ const originalText = new WeakMap();
 const originalAttributes = new WeakMap();
 const translate = value => {
   if (russianText[value]) return russianText[value];
+  if (/^Villa type [123] interior rendering \d+$/.test(value)) return value.replace(/^Villa type ([123]) interior rendering (\d+)$/, 'Визуализация интерьера виллы типа $1 — $2');
   if (/^\d+(\.\d+)? km$/.test(value)) return value.replace(' km',' км');
   if (value.includes(' km straight-line from Solvyn City')) return value.replace(' km straight-line from Solvyn City',' км по прямой от Solvyn City');
   if (value.endsWith(': show details')) return (russianText[value.slice(0,-14)] || value.slice(0,-14)) + ': подробнее';
