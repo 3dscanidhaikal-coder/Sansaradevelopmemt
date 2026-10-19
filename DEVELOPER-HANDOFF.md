@@ -46,4 +46,4 @@ Confirm final dates, availability, pricing, legal/privacy copy and translations 
 - Phase 2 studio apartments: supplied thumbnail and five interiors. Other Phase 2 residence interiors still await updating.
 - Archived amenities section: archive/features-amenities/.
 
-19 October 2026: contact +62 823-3968-2775; footer address added; expanded Russian translations; Privacy Policy label; six published Phase 2 floor plans; penthouse interiors/thumbnail and separate Phase 1 apartment thumbnails. Project hero/card WebP files in assets/web/ reduce their total to approximately 1.27 MB, with continuous hero zoom removed. Residence labels use consistent sentence case.
+Latest update, 19 October 2026: Phase 1 floor plans added for all five residences; separate updated 40/50 m² apartment galleries; gallery enquiry notes and navigation buttons; expanded Russian translations. All residence galleries now use a keyboard-accessible overlay carousel with a 70% black backdrop, outside-picture click to close, and shared SVG direction icons. Phase collection All projects links are outlined buttons.

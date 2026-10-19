@@ -536,6 +536,143 @@ Object.assign(russianText, {'View full-size floor plan':'Посмотреть п
 
 Object.assign(russianText, {'Our projects':'Наши проекты','All residences':'Все резиденции'});
 
+Object.assign(russianText, {'All projects':'Все проекты','Contact our team':'Связаться с командой'});
+
+Object.assign(russianText, {"Ask our team for more pictures of this residence, final plans, a presentation, current availability and pricing.":"Запросите у нашей команды дополнительные фотографии этой резиденции, окончательные планы, презентацию, а также информацию об актуальном наличии и ценах."});
+
+// Audited residence labels, image descriptions and navigation text.
+Object.assign(russianText, {
+  "Main navigation": "Основная навигация",
+  "Mobile navigation": "Мобильная навигация",
+  "Go back": "Назад",
+  "Project gallery": "Галерея проектов",
+  "Close technical details": "Закрыть технические сведения",
+  "Client testimonials": "Отзывы клиентов",
+  "Previous testimonial": "Предыдущий отзыв",
+  "Next testimonial": "Следующий отзыв",
+  "Nearby destinations, scroll to see more": "Места поблизости — прокрутите для просмотра",
+  "Scroll to more locations": "Показать другие места",
+  "Interactive map of Solvyn City and nearby Bali destinations": "Интерактивная карта Solvyn City и ближайших мест на Бали",
+  "Illustrative construction stages": "Иллюстрации этапов строительства",
+  "Concept of a limestone villa and reflection pool in a tropical Bali garden": "Концепция виллы из известняка с декоративным бассейном в тропическом саду на Бали",
+  "Architectural rendering of contemporary villas along a landscaped lane at Solvyn City": "Архитектурная визуализация современных вилл вдоль озеленённой дорожки в Solvyn City",
+  "Architectural plans, a scale model and material samples": "Архитектурные планы, макет и образцы материалов",
+  "Concrete foundations and reinforcement at an illustrative building site": "Бетонный фундамент и арматура на иллюстрации строительной площадки",
+  "Exposed lightweight steel framing of a tropical villa": "Открытый лёгкий стальной каркас тропической виллы",
+  "Cabinetry, plaster and stone finishes being installed": "Монтаж мебели, штукатурки и каменной отделки",
+  "Completed concept villa with a pool and tropical planting": "Визуализация готовой виллы с бассейном и тропическими растениями",
+  "Stock portrait of a smiling man; placeholder for a future client photo": "Портрет улыбающегося мужчины — временное изображение для будущей фотографии клиента",
+  "Warm light falling across a concept Bali villa interior": "Тёплый свет в концептуальном интерьере виллы на Бали",
+  "Concept villa surrounded by tropical gardens in Bali": "Концепция виллы в окружении тропических садов на Бали",
+  "World map with gold location pins across the Americas, Europe, Africa, Asia and Australia": "Карта мира с золотыми отметками в Америке, Европе, Африке, Азии и Австралии",
+  "Architectural rendering of a sculptural walkway through tropical gardens overlooking the ocean at sunset": "Архитектурная визуализация дорожки в тропическом саду с видом на океан на закате",
+  "Concept interior showing warm stone and timber materials": "Концептуальный интерьер с камнем и деревом тёплых оттенков",
+  "Illustrative residence interior and architecture": "Визуализация интерьера и архитектуры резиденции",
+  "Apartment and penthouse building rendering": "Визуализация здания с апартаментами и пентхаусами",
+  "Studio apartment building rendering": "Визуализация здания с апартаментами-студиями",
+  "Illustrative apartment rendering": "Визуализация апартаментов",
+  "Illustrative architectural concept": "Архитектурная концепция",
+  "Architectural concept illustration": "Иллюстрация архитектурной концепции",
+  "Solvyn City Phase 2 — Two-bedroom villa · Type 1": "Solvyn City — Этап 2 — Вилла с двумя спальнями · Тип 1",
+  "Solvyn City Phase 2 — Two-bedroom villa · Type 2": "Solvyn City — Этап 2 — Вилла с двумя спальнями · Тип 2",
+  "Solvyn City Phase 2 — Three-bedroom villa · Type 1": "Solvyn City — Этап 2 — Вилла с тремя спальнями · Тип 1",
+  "Solvyn City Phase 2 — Three-bedroom villa · Type 2": "Solvyn City — Этап 2 — Вилла с тремя спальнями · Тип 2",
+  "Sansara Development home": "Главная страница Sansara Development",
+  "Solvyn City Phase 1 architectural rendering": "Solvyn City — Этап 1 архитектурная визуализация",
+  "Solvyn City Phase 2 architectural rendering": "Solvyn City — Этап 2 архитектурная визуализация",
+  "View planning image": "Посмотреть изображение: планирование",
+  "View foundation image": "Посмотреть изображение: фундамент",
+  "View structure image": "Посмотреть изображение: каркас",
+  "View interiors image": "Посмотреть изображение: интерьеры",
+  "View completion image": "Посмотреть изображение: завершение",
+  "Concept view of Solvyn City": "Концептуальный вид: Solvyn City",
+  "Concept view of Solvyn City Phase 2": "Концептуальный вид: Solvyn City — Этап 2",
+  "Illustrative view of Solvyn City Phase 1": "Визуализация: Solvyn City — Этап 1",
+  "Illustrative view of Solvyn City Phase 2": "Визуализация: Solvyn City — Этап 2",
+  "Explore Solvyn City 1-bedroom villa": "Посмотреть Solvyn City Вилла с одной спальней",
+  "Explore Solvyn City Phase 2 Two-bedroom villa · Type 1": "Посмотреть Solvyn City — Этап 2 Вилла с двумя спальнями · Тип 1",
+  "Explore Solvyn City Three-bedroom villa · Type 1": "Посмотреть Solvyn City Вилла с тремя спальнями · Тип 1",
+  "Explore Solvyn City Phase 1 Villa type 1": "Посмотреть Solvyn City — Этап 1 Вилла, тип 1",
+  "Explore Solvyn City Phase 1 Villa type 2": "Посмотреть Solvyn City — Этап 1 Вилла, тип 2",
+  "Explore Solvyn City Phase 1 Villa type 3": "Посмотреть Solvyn City — Этап 1 Вилла, тип 3",
+  "Explore Solvyn City 1-bedroom apartment": "Посмотреть Solvyn City Апартаменты с одной спальней",
+  "Explore Solvyn City Phase 1 Apartments": "Посмотреть Solvyn City — Этап 1 Апартаменты",
+  "Explore two-bedroom penthouse": "Посмотреть Пентхаус с двумя спальнями",
+  "Explore Villa type 3": "Посмотреть Вилла, тип 3",
+  "Villa type 3 architectural rendering": "Вилла, тип 3 архитектурная визуализация",
+  "Explore 40 m² apartment": "Посмотреть 40 м² апартаменты",
+  "Explore 50 m² apartment": "Посмотреть 50 м² апартаменты",
+  "Explore studio apartments": "Посмотреть Апартаменты-студии",
+  "Explore Two-bedroom villa · Type 2": "Посмотреть Вилла с двумя спальнями · Тип 2",
+  "Two-bedroom villa · Type 2 architectural rendering": "Вилла с двумя спальнями · Тип 2 архитектурная визуализация",
+  "Explore one-bedroom villa": "Посмотреть Вилла с одной спальней",
+  "One-bedroom villa rendering": "Вилла с одной спальней визуализация",
+  "Architectural concept for Apartments": "Архитектурная концепция: Апартаменты",
+  "50 m² apartment floor plan at Solvyn City Phase 1": "50 м² апартаменты планировка в Solvyn City — Этап 1",
+  "Open residence image 1": "Открыть изображение резиденции 1",
+  "Phase 1 apartment interior rendering 1": "Этап 1 · апартаменты визуализация интерьера 1",
+  "Open residence image 2": "Открыть изображение резиденции 2",
+  "Phase 1 apartment interior rendering 2": "Этап 1 · апартаменты визуализация интерьера 2",
+  "Open residence image 3": "Открыть изображение резиденции 3",
+  "Phase 1 apartment interior rendering 3": "Этап 1 · апартаменты визуализация интерьера 3",
+  "Open residence image 4": "Открыть изображение резиденции 4",
+  "Phase 1 apartment interior rendering 4": "Этап 1 · апартаменты визуализация интерьера 4",
+  "Open residence image 5": "Открыть изображение резиденции 5",
+  "Phase 1 apartment interior rendering 5": "Этап 1 · апартаменты визуализация интерьера 5",
+  "40 m² apartment floor plan at Solvyn City Phase 1": "40 м² апартаменты планировка в Solvyn City — Этап 1",
+  "Architectural concept for Villa type 1": "Архитектурная концепция: Вилла, тип 1",
+  "Explore Solvyn City Phase 1 1-bedroom apartment": "Посмотреть Solvyn City — Этап 1 Апартаменты с одной спальней",
+  "Architectural concept for Villa type 2": "Архитектурная концепция: Вилла, тип 2",
+  "Explore Solvyn City Phase 1 1-bedroom villa": "Посмотреть Solvyn City — Этап 1 Вилла с одной спальней",
+  "Architectural concept for 1-bedroom villa": "Архитектурная концепция: Вилла с одной спальней",
+  "Explore Solvyn City Phase 1 Two-bedroom villa": "Посмотреть Solvyn City — Этап 1 Вилла с двумя спальнями",
+  "Architectural concept for Two-bedroom penthouse": "Архитектурная концепция: Пентхаус с двумя спальнями",
+  "Two-bedroom penthouse interior rendering 1": "Пентхаус с двумя спальнями визуализация интерьера 1",
+  "Two-bedroom penthouse interior rendering 2": "Пентхаус с двумя спальнями визуализация интерьера 2",
+  "Two-bedroom penthouse interior rendering 3": "Пентхаус с двумя спальнями визуализация интерьера 3",
+  "Two-bedroom penthouse interior rendering 4": "Пентхаус с двумя спальнями визуализация интерьера 4",
+  "Two-bedroom penthouse interior rendering 5": "Пентхаус с двумя спальнями визуализация интерьера 5",
+  "Explore Solvyn City Phase 2 1-bedroom villa": "Посмотреть Solvyn City — Этап 2 Вилла с одной спальней",
+  "Explore Solvyn City Phase 2 Two-bedroom villa": "Посмотреть Solvyn City — Этап 2 Вилла с двумя спальнями",
+  "Explore Solvyn City Phase 2 Three-bedroom villa · Type 1": "Посмотреть Solvyn City — Этап 2 Вилла с тремя спальнями · Тип 1",
+  "Two-bedroom villa · Type 2.": "Вилла с двумя спальнями · Тип 2.",
+  "Residence rendering 1": "Резиденция визуализация 1",
+  "Residence rendering 2": "Резиденция визуализация 2",
+  "Apartments rendering": "Апартаменты визуализация",
+  "Two-bedroom villa · Type 1 rendering": "Вилла с двумя спальнями · Тип 1 визуализация",
+  "Architectural concept for Studio apartments": "Архитектурная концепция: Апартаменты-студии",
+  "Phase 2 studio apartment interior rendering 1": "Этап 2 · studio апартаменты визуализация интерьера 1",
+  "Phase 2 studio apartment interior rendering 2": "Этап 2 · studio апартаменты визуализация интерьера 2",
+  "Phase 2 studio apartment interior rendering 3": "Этап 2 · studio апартаменты визуализация интерьера 3",
+  "Phase 2 studio apartment interior rendering 4": "Этап 2 · studio апартаменты визуализация интерьера 4",
+  "Phase 2 studio apartment interior rendering 5": "Этап 2 · studio апартаменты визуализация интерьера 5",
+  "Architectural concept for One-bedroom villa": "Архитектурная концепция: Вилла с одной спальней",
+  "Two-bedroom villa · Type 1.": "Вилла с двумя спальнями · Тип 1.",
+  "Architectural concept for Two-bedroom villa": "Архитектурная концепция: Вилла с двумя спальнями",
+  "Three-bedroom villa · Type 1.": "Вилла с тремя спальнями · Тип 1.",
+  "Architectural concept for Three-bedroom villa · Type 1": "Архитектурная концепция: Вилла с тремя спальнями · Тип 1",
+  "40 m² apartment interior rendering 1": "40 м² апартаменты визуализация интерьера 1",
+  "50 m² apartment interior rendering 1": "50 м² апартаменты визуализация интерьера 1",
+  "40 m² apartment interior rendering 2": "40 м² апартаменты визуализация интерьера 2",
+  "50 m² apartment interior rendering 2": "50 м² апартаменты визуализация интерьера 2",
+  "40 m² apartment interior rendering 3": "40 м² апартаменты визуализация интерьера 3",
+  "50 m² apartment interior rendering 3": "50 м² апартаменты визуализация интерьера 3",
+  "40 m² apartment interior rendering 4": "40 м² апартаменты визуализация интерьера 4",
+  "50 m² apartment interior rendering 4": "50 м² апартаменты визуализация интерьера 4",
+  "40 m² apartment interior rendering 5": "40 м² апартаменты визуализация интерьера 5",
+  "50 m² apartment interior rendering 5": "50 м² апартаменты визуализация интерьера 5"
+});
+
+Object.assign(russianText, {'Residence image gallery':'Галерея резиденции','Close gallery':'Закрыть галерею','Previous image':'Предыдущее изображение','Next image':'Следующее изображение'});
+
+// Arrow icons are separate from translated labels.
+Object.entries(russianText).forEach(([key,value])=>{
+ if(typeof value==='string' && /[←→↑↓↗↘]/.test(key)) {
+   const label=key.replace(/[←→↑↓↗↘]/g,'').trim();
+   if(label && !russianText[label]) russianText[label]=value.replace(/[←→↑↓↗↘]/g,'').trim();
+ }
+});
+
 let selectedLanguage = 'en';
 try { selectedLanguage = localStorage.getItem('sansara-language') === 'ru' ? 'ru' : 'en'; } catch {}
 const originalText = new WeakMap();
@@ -546,6 +683,7 @@ const translate = value => {
   if (/^\d+(\.\d+)? km$/.test(value)) return value.replace(' km',' км');
   if (value.includes(' km straight-line from Solvyn City')) return value.replace(' km straight-line from Solvyn City',' км по прямой от Solvyn City');
   if (value.endsWith(' floor plan at Solvyn City Phase 2')) return translate(value.replace(' floor plan at Solvyn City Phase 2','')) + ' — планировка, Solvyn City, этап 2';
+  if (value.endsWith(' floor plan at Solvyn City Phase 1')) return translate(value.replace(' floor plan at Solvyn City Phase 1','')) + ' — планировка, Solvyn City, этап 1';
   // Translate specification strings and residence names while retaining brand names.
   if (/^(?:Solvyn City Phase [12]|SOLVYN CITY PHASE [12])/.test(value)) {
     const rest=value.replace(/^(Solvyn City Phase ([12])|SOLVYN CITY PHASE ([12]))/,(_,name,a,b)=>'Solvyn City — Этап '+(a||b));

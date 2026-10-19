@@ -530,4 +530,122 @@ if (baliMapElement) {
 document.querySelector('.floating-back')?.addEventListener('click', () => {
   if (window.history.length > 1) window.history.back();
   else window.location.assign('index.html');
-});
+});// Residence galleries open in a native modal with a contained keyboard focus.
+(() => {
+  const galleries = [...document.querySelectorAll('.villa-gallery-grid')];
+  if (!galleries.length) return;
+  const dialog = document.createElement('dialog');
+  dialog.className = 'residence-lightbox';
+  dialog.setAttribute('aria-label', 'Residence image gallery');
+  dialog.innerHTML = `<button type="button" class="lightbox-close" aria-label="Close gallery" autofocus>×</button><button type="button" class="lightbox-prev" aria-label="Previous image"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5 5 12l7 7M5 12h14"/></svg></button><figure><img alt=""><figcaption aria-live="polite"></figcaption></figure><button type="button" class="lightbox-next" aria-label="Next image"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m12 5 7 7-7 7M19 12H5"/></svg></button>`;
+  document.body.append(dialog);
+  const image = dialog.querySelector('img');
+  const count = dialog.querySelector('figcaption');
+  const previous = dialog.querySelector('.lightbox-prev');
+  const next = dialog.querySelector('.lightbox-next');
+  let items = [], index = 0, opener;
+  const show = step => {
+    index = (step + items.length) % items.length;
+    image.src = items[index].href;
+    image.alt = items[index].querySelector('img')?.alt || '';
+    count.textContent = `${index + 1} / ${items.length}`;
+    previous.hidden = next.hidden = items.length < 2;
+  };
+  galleries.forEach(gallery => {
+    const links = [...gallery.querySelectorAll('a[href]')];
+    links.forEach((link, position) => {
+      link.removeAttribute('target');
+      link.setAttribute('aria-haspopup', 'dialog');
+      link.addEventListener('click', event => {
+        if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+        event.preventDefault();
+        items = links;
+        opener = link;
+        show(position);
+        dialog.showModal();
+        document.body.classList.add('modal-open');
+      });
+    });
+  });
+  previous.addEventListener('click', () => show(index - 1));
+  next.addEventListener('click', () => show(index + 1));
+  dialog.querySelector('.lightbox-close').addEventListener('click', () => dialog.close());
+  dialog.addEventListener('click', event => {
+    if (event.target.closest('button')) return;
+    const bounds = image.getBoundingClientRect();
+    const scale = Math.min(bounds.width / image.naturalWidth, bounds.height / image.naturalHeight);
+    const width = image.naturalWidth * scale;
+    const height = image.naturalHeight * scale;
+    const left = bounds.left + (bounds.width - width) / 2;
+    const top = bounds.top + (bounds.height - height) / 2;
+    const insidePicture = event.target === image && event.clientX >= left && event.clientX <= left + width && event.clientY >= top && event.clientY <= top + height;
+    if (!insidePicture) dialog.close();
+  });
+  dialog.addEventListener('keydown', event => {
+    if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+      event.preventDefault();
+      show(index + (event.key === 'ArrowRight' ? 1 : -1));
+    }
+  });
+  let touchStart;
+  image.addEventListener('touchstart', event => { touchStart = event.changedTouches[0].clientX; }, { passive: true });
+  image.addEventListener('touchend', event => {
+    const distance = event.changedTouches[0].clientX - touchStart;
+    if (Math.abs(distance) > 55) show(index + (distance < 0 ? 1 : -1));
+  }, { passive: true });
+  dialog.addEventListener('close', () => {
+    image.removeAttribute('src');
+    if (!document.querySelector('dialog[open]')) document.body.classList.remove('modal-open');
+    opener?.focus({ preventScroll: true });
+  });
+})();
+// Use one SVG arrow system for static links and dynamically created controls.
+(() => {
+  const paths = {
+    '←': 'M12 5 5 12l7 7M5 12h14',
+    '→': 'm12 5 7 7-7 7M19 12H5',
+    '↑': 'm5 12 7-7 7 7M12 5v14',
+    '↓': 'm5 12 7 7 7-7M12 19V5',
+    '↗': 'M5 19 19 5M5 5h14v14',
+    '↘': 'M5 5 19 19M5 19h14V5'
+  };
+  const pattern = /[←→↑↓↗↘]/g;
+  function replaceArrows(root) {
+    const nodes = [];
+    if (root.nodeType === Node.TEXT_NODE) nodes.push(root);
+    else if (root.nodeType === Node.ELEMENT_NODE) {
+      const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT);
+      while (walker.nextNode()) nodes.push(walker.currentNode);
+    }
+    nodes.forEach(node => {
+      if (!node.isConnected || !node.parentElement.closest('a,button,[aria-hidden="true"]') || node.parentElement.closest('script,style,svg,textarea,option')) return;
+      const text = node.textContent;
+      pattern.lastIndex = 0;
+      if (!pattern.test(text)) return;
+      pattern.lastIndex = 0;
+      const fragment = document.createDocumentFragment();
+      let offset = 0;
+      for (const match of text.matchAll(pattern)) {
+        if (match.index > offset) fragment.append(document.createTextNode(text.slice(offset, match.index)));
+        const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+        svg.setAttribute('viewBox', '0 0 24 24');
+        svg.setAttribute('class', 'ui-arrow');
+        svg.setAttribute('width', '20'); svg.setAttribute('height', '20');
+        svg.setAttribute('fill', 'none'); svg.setAttribute('stroke', 'currentColor');
+        svg.setAttribute('stroke-width', '1.8');
+        svg.setAttribute('stroke-linecap', 'round'); svg.setAttribute('stroke-linejoin', 'round');
+        svg.setAttribute('aria-hidden', 'true'); svg.setAttribute('focusable', 'false');
+        const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+        path.setAttribute('d', paths[match[0]]); svg.append(path); fragment.append(svg);
+        offset = match.index + match[0].length;
+      }
+      if (offset < text.length) fragment.append(document.createTextNode(text.slice(offset)));
+      node.replaceWith(fragment);
+    });
+  }
+  replaceArrows(document.body);
+  new MutationObserver(records => records.forEach(record => {
+    if (record.type === 'characterData') replaceArrows(record.target);
+    else record.addedNodes.forEach(replaceArrows);
+  })).observe(document.body, { childList: true, characterData: true, subtree: true });
+})();
