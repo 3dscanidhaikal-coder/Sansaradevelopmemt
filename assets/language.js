@@ -673,6 +673,8 @@ Object.entries(russianText).forEach(([key,value])=>{
  }
 });
 
+Object.assign(russianText, {"Residence rendering 1":"Визуализация резиденции 1","Residence rendering 2":"Визуализация резиденции 2","Residence rendering 3":"Визуализация резиденции 3","Residence rendering 4":"Визуализация резиденции 4","Residence rendering 5":"Визуализация резиденции 5"});
+
 let selectedLanguage = 'en';
 try { selectedLanguage = localStorage.getItem('sansara-language') === 'ru' ? 'ru' : 'en'; } catch {}
 const originalText = new WeakMap();
