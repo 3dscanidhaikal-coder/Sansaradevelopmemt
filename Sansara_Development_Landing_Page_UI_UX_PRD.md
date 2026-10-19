@@ -9,8 +9,8 @@
 
 ## 1. Project Overview
 
-**Brand:** Sansara Development  
-**Website:** sansaradevelopment.com  
+**Brand:** Sansara Development
+**Website:** sansaradevelopment.com
 **Page:** Landing page / Home only
 
 ### Current business positioning

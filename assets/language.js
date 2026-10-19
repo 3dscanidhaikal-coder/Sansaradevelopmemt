@@ -50,7 +50,7 @@ One-bedroom villa|Вилла с одной спальней
 47.7 m² · 1 bedroom|47,7 м² · 1 спальня
 7.5 m² private pool · 14 villas|Частный бассейн 7,5 м² · 14 вилл
 A 47.7 m² one-bedroom villa at Solvyn City Phase 2, with a spacious bedroom, one bathroom and a kitchen-living room. A terrace with a relaxation area, a 7.5 m² private pool and an ocean view complete the layout. This residence type comprises 14 villas.|Вилла площадью 47,7 м² с одной спальней в Solvyn City Phase 2. Просторная спальня, ванная комната, кухня-гостиная, терраса с зоной отдыха, частный бассейн площадью 7,5 м² и вид на океан. Количество вилл этого типа — 14.
-2-bedroom villa · Type 1|Вилла с 2 спальнями · Тип 1
+Two-bedroom villa · Type 1|Вилла с 2 спальнями · Тип 1
 11.7 m² private pool · 11 villas|Частный бассейн 11,7 м² · 11 вилл
 2 + guest WC|2 + гостевой санузел
 11.7 m² · lower level|11,7 м² · нижний уровень
@@ -222,7 +222,7 @@ ARCHITECTURE. LIFE. LONGEVITY.|АРХИТЕКТУРА. ЖИЗНЬ. ДОЛГОВ�
 Not just a place.|Больше, чем место.
 A way of living.|Образ жизни.
 Thoughtful homes, natural materials, and space for the everyday. Designed around the way Bali is lived.|Продуманные дома, натуральные материалы и пространство для повседневной жизни. В ритме Бали.
-Years of experience.|Лет опыта.
+Years of international experience.|Лет опыта.
 A lasting approach to building.|Строим с заботой о будущем.
 Discover our projects|Наши проекты
 02 / OUR FLAGSHIP|02 / ФЛАГМАНСКИЙ ПРОЕКТ
@@ -346,7 +346,7 @@ Solvyn City Phase 1 tour|Экскурсия в Solvyn City Phase 1
 A general conversation|Общие вопросы
 Anything else?|Хотите что-то добавить?
 (optional)|(необязательно)
-Prepare your enquiry, then open a WhatsApp draft for +62 822 3537 2572. You review and send it in WhatsApp. You can also download a copy.|Подготовьте запрос и откройте черновик в WhatsApp на номер +62 822 3537 2572. Вы сможете проверить и отправить его самостоятельно или скачать копию.
+Prepare your enquiry, then open a WhatsApp draft for +62 823-3968-2775. You review and send it in WhatsApp. You can also download a copy.|Подготовьте запрос и откройте черновик в WhatsApp на номер +62 823-3968-2775. Вы сможете проверить и отправить его самостоятельно или скачать копию.
 Prepare my enquiry|Подготовить запрос
 Continue in WhatsApp ↗|Продолжить в WhatsApp ↗
 Download your enquiry ↓|Скачать запрос ↓
@@ -421,8 +421,8 @@ Object.assign(russianText, {
   'Select a residence type': 'Выберите тип резиденции',
   'Apartments': 'Апартаменты',
   'Villa type 1': 'Вилла, тип 1', 'Villa type 2': 'Вилла, тип 2', 'Villa type 3': 'Вилла, тип 3',
-  '1-bedroom apartment': 'Апартаменты с 1 спальней', '1-bedroom villa': 'Вилла с 1 спальней', '2-bedroom villa': 'Вилла с 2 спальнями',
-  '3-bedroom villa · Type 1': 'Вилла с 3 спальнями · Тип 1', '3-bedroom villa · Type 2': 'Вилла с 3 спальнями · Тип 2',
+  '1-bedroom apartment': 'Апартаменты с 1 спальней', '1-bedroom villa': 'Вилла с 1 спальней', 'Two-bedroom villa': 'Вилла с 2 спальнями',
+  'Three-bedroom villa · Type 1': 'Вилла с 3 спальнями · Тип 1', 'Three-bedroom villa · Type 2': 'Вилла с 3 спальнями · Тип 2',
   'Our construction approach uses lightweight steel framing (LGSF), formed from cold-formed steel profiles with stiffening ribs.': 'Мы используем лёгкий стальной каркас (LGSF) из холодногнутых стальных профилей с рёбрами жёсткости.',
   'Steel framing and a perforated thermal profile are selected to address decay, termite exposure, condensation and thermal bridging in Bali’s climate.': 'Стальной каркас и перфорированный термопрофиль подобраны с учётом гниения, воздействия термитов, конденсата и мостиков холода в климате Бали.',
   'Our published specification lists an Rw sound-insulation rating of 62–68 dB for assemblies using ECO concrete and gypsum fibreboard. Ask for the assembly details and test documentation.': 'В опубликованной спецификации указан индекс звукоизоляции Rw 62–68 дБ для конструкций с ECO-бетоном и гипсоволокнистыми плитами. Запросите состав конструкций и протоколы испытаний.',
@@ -463,6 +463,79 @@ Object.assign(russianText, {
   "Qualified engineers assess each site’s structural design, considering foundations, framing and connections together.": "Квалифицированные инженеры оценивают конструктивные решения для каждого участка, рассматривая фундамент, каркас и соединения в комплексе."
 });
 
+Object.assign(russianText, {
+  "Privacy Policy": "Политика конфиденциальности",
+  "Years of international experience.": "Лет международного опыта.",
+  "Years of international experience": "Лет международного опыта",
+  "18+ years of international experience in steel framing and construction inform our approach to contemporary homes in Bali.": "Более 18 лет международного опыта в строительстве и применении стальных каркасов лежат в основе нашего подхода к современным домам на Бали.",
+  "EXPERIENCE WITHOUT BORDERS": "ОПЫТ БЕЗ ГРАНИЦ",
+  "Built on experience.": "Основано на опыте.",
+  "Connected worldwide.": "Связи по всему миру.",
+  "18 years in steel framing and construction, with clients and manufacturing expertise around the world.": "18 лет опыта в строительстве и применении стальных каркасов, клиенты и производственная экспертиза по всему миру.",
+  "Countries": "Стран",
+  "Satisfied clients": "Довольных клиентов",
+  "Factories around the world": "Заводов по всему миру",
+  "Years in steel framing": "Лет в сфере стальных каркасов",
+  "and construction": "и строительства",
+  "Built on knowledge.": "Основано на знаниях.",
+  "Made to last.": "Создано надолго.",
+  "More locations": "Другие места",
+  "Our Projects": "Наши проекты",
+  "All Residences": "Все резиденции",
+  "01 / VILLAS": "01 / ВИЛЛЫ",
+  "02 / APARTMENTS": "02 / АПАРТАМЕНТЫ",
+  "Villas and apartments in Bukit, Bali, with residences ranging from 40 to 234 m².": "Виллы и апартаменты на Буките, Бали, площадью от 40 до 234 м².",
+  "Project year": "Год проекта",
+  "Residence sizes": "Площади резиденций",
+  "6 residence types": "6 типов резиденций",
+  "Two-bedroom villa · Type 2": "Вилла с 2 спальнями · Тип 2",
+  "YOUR RESIDENCE": "ВАША РЕЗИДЕНЦИЯ",
+  "All residences ↗": "Все резиденции ↗",
+  "Residence details.": "Характеристики резиденции.",
+  "Location": "Расположение",
+  "Bukit, Bali": "Букит, Бали",
+  "GALLERY": "ГАЛЕРЕЯ",
+  "ARCHITECTURAL CONCEPTS": "АРХИТЕКТУРНЫЕ КОНЦЕПЦИИ",
+  "A closer look.": "Рассмотрите подробнее.",
+  "Residence imagery supplied by Sansara Development. Ask the team for this residence’s final plans, current availability and pricing.": "Изображения резиденции предоставлены Sansara Development. Уточните у команды окончательные планы, актуальное наличие и цены.",
+  "EXPLORE NEXT": "ПОСМОТРИТЕ ТАКЖЕ",
+  "ANOTHER PLACE TO CALL HOME": "ЕЩЁ ОДНО МЕСТО ДЛЯ ВАШЕГО ДОМА",
+  "Confirm with the team": "Уточните у команды",
+  "Illustrative concept imagery, shared across residence types. Ask the team for this residence’s final plans, current availability and pricing.": "Концептуальные изображения используются для разных типов резиденций. Уточните у команды окончательные планы, актуальное наличие и цены.",
+  "Residence": "Резиденция",
+  "View this residence": "Посмотреть резиденцию",
+  "View studio apartments": "Посмотреть апартаменты-студии",
+  "All Phase 2 residences ↗": "Все резиденции второго этапа ↗",
+  "Explore Solvyn City Phase 2 residences": "Посмотреть резиденции Solvyn City второго этапа",
+  "A private retreat in Bukit. Apartments and villas for contemporary island living.": "Уединённое пространство на Буките. Апартаменты и виллы для современной островной жизни.",
+  "Your privacy.": "Ваша конфиденциальность.",
+  "Privacy Policy.": "Политика конфиденциальности.",
+  "English": "Английский",
+  "18+ YEARS OF EXPERIENCE": "18+ ЛЕТ МЕЖДУНАРОДНОГО ОПЫТА",
+  "Communal pool · area to be confirmed": "Общий бассейн · площадь уточняется"
+});
+
+Object.assign(russianText, {
+  "TESTIMONIAL PLACEHOLDER": "МЕСТО ДЛЯ ОТЗЫВА",
+  "“Your client’s experience goes here — in their own words, from the first conversation to finding their home.”": "«Здесь будет отзыв клиента о его опыте — от первого разговора до выбора дома».",
+  "Client name": "Имя клиента",
+  "Homeowner · Residence name": "Владелец · Название резиденции",
+  "Solvyn River Surf": "Solvyn — Речной сёрфинг",
+  "Two private pools · 7 villas": "Два бассейна: 12 м² и 12,2 м² · 7 вилл",
+  "12 m² + 12.2 m² private pools · 7 villas": "Частные бассейны: 12 м² и 12,2 м² · 7 вилл",
+  "167 m² · 3 bedrooms · 12 m² + 12.2 m² private pools": "167 м² · 3 спальни · Частные бассейны 12 м² и 12,2 м²",
+  "Communal pool · Area to be confirmed": "Общий бассейн · Площадь уточняется"
+});
+Object.keys(russianText).forEach(key=>{russianText[key]=typeof russianText[key]==='string'?russianText[key].replace(/Phase ([12])/g,'Этап $1').replace(/Villa type ([123])/g,'Вилла, тип $1'):russianText[key];});
+
+Object.assign(russianText, {'18+ YEARS OF INTERNATIONAL EXPERIENCE':'18+ ЛЕТ МЕЖДУНАРОДНОГО ОПЫТА'});
+
+Object.assign(russianText, {"Jl. Karang Pandawa No. 8x, Kutuh, Kec. Kuta Sel., Kota Denpasar, Bali 80224.":"Ул. Каранг Пандава, № 8x, Кутух, Южная Кута, Денпасар, Бали 80224."});
+
+Object.assign(russianText, {'View full-size floor plan':'Посмотреть планировку в полном размере'});
+
+Object.assign(russianText, {'Our projects':'Наши проекты','All residences':'Все резиденции'});
+
 let selectedLanguage = 'en';
 try { selectedLanguage = localStorage.getItem('sansara-language') === 'ru' ? 'ru' : 'en'; } catch {}
 const originalText = new WeakMap();
@@ -472,6 +545,14 @@ const translate = value => {
   if (/^Villa type [123] interior rendering \d+$/.test(value)) return value.replace(/^Villa type ([123]) interior rendering (\d+)$/, 'Визуализация интерьера виллы типа $1 — $2');
   if (/^\d+(\.\d+)? km$/.test(value)) return value.replace(' km',' км');
   if (value.includes(' km straight-line from Solvyn City')) return value.replace(' km straight-line from Solvyn City',' км по прямой от Solvyn City');
+  if (value.endsWith(' floor plan at Solvyn City Phase 2')) return translate(value.replace(' floor plan at Solvyn City Phase 2','')) + ' — планировка, Solvyn City, этап 2';
+  // Translate specification strings and residence names while retaining brand names.
+  if (/^(?:Solvyn City Phase [12]|SOLVYN CITY PHASE [12])/.test(value)) {
+    const rest=value.replace(/^(Solvyn City Phase ([12])|SOLVYN CITY PHASE ([12]))/,(_,name,a,b)=>'Solvyn City — Этап '+(a||b));
+    return rest.replace(/BUKIT, BALI/g,'БУКИТ, БАЛИ').replace(/Villa type ([123])/g,'Вилла, тип $1').replace(/Apartment 50 m²/g,'Апартаменты 50 м²').replace(/Apartments/g,'Апартаменты').replace(/Studio apartments/g,'Апартаменты-студии').replace(/Two-bedroom penthouse/g,'Пентхаус с двумя спальнями').replace(/One-bedroom villa/g,'Вилла с одной спальней').replace(/([23])-bedroom villa · Type ([12])/g,'Вилла с $1 спальнями · Тип $2').replace(/presentation/g,'презентация');
+  }
+  if (/^(?:\d|Apartment|Villa type|Studio apartments|One-bedroom villa|Two-bedroom penthouse|Apartments\.)/.test(value)) return value.replace(/Villa type ([123])/g,'Вилла, тип $1').replace(/Apartment(s)?/g,'Апартаменты').replace(/Studio apartments/g,'Апартаменты-студии').replace(/One-bedroom villa/g,'Вилла с одной спальней').replace(/Two-bedroom penthouse/g,'Пентхаус с двумя спальнями').replace(/([23])-bedroom villa · Type ([12])/g,'Вилла с $1 спальнями · Тип $2').replace(/m²/g,'м²').replace(/including rooftop/g,'включая крышу-террасу').replace(/bedrooms/g,'спальни').replace(/bedroom/g,'спальня').replace(/private pool/g,'частный бассейн').replace(/lower-level pool/g,'бассейн на нижнем уровне').replace(/upper-level pool/g,'бассейн на верхнем уровне').replace(/Two private pools/g,'Два частных бассейна').replace(/BUKIT, BALI/g,'БУКИТ, БАЛИ').replace(/Studio/g,'Студия');
+  if (/^BUKIT, BALI/.test(value)) return value.replace('BUKIT, BALI','БУКИТ, БАЛИ');
   if (value.endsWith(': show details')) return (russianText[value.slice(0,-14)] || value.slice(0,-14)) + ': подробнее';
   return value;
 };
@@ -494,9 +575,9 @@ function applyLanguage() {
     const translated=selectedLanguage==='ru' ? original.replace(original.trim(),translate(original.trim())) : original;
     if(current!==translated) node.textContent=translated;
   }
-  document.querySelectorAll('[aria-label],[placeholder]').forEach(element=>{
+  document.querySelectorAll('[aria-label],[placeholder],[alt],[title]').forEach(element=>{
     let values=originalAttributes.get(element)||{};
-    for(const name of ['aria-label','placeholder']) {
+    for(const name of ['aria-label','placeholder','alt','title']) {
       if(!element.hasAttribute(name)) continue;
       const current=element.getAttribute(name);
       if(!values[name] || (current!==values[name] && current!==translate(values[name]))) values[name]=current;
@@ -509,7 +590,7 @@ function applyLanguage() {
   document.querySelectorAll('.language-current').forEach(label=>{if(label.textContent!==selectedLanguage.toUpperCase()) label.textContent=selectedLanguage.toUpperCase();});
   document.querySelectorAll('[data-language]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.language===selectedLanguage)));
   document.title=document.body.dataset.phase ? (selectedLanguage==='ru'?'Solvyn City — Фаза ':'Solvyn City Phase ')+document.body.dataset.phase+' — Sansara Development' : document.body.classList.contains('residences-page') ? (selectedLanguage==='ru'?'Резиденции — Sansara Development':'Residences — Sansara Development') : document.body.classList.contains('projects-page') ? (selectedLanguage==='ru'?'Проекты — Sansara Development':'Projects — Sansara Development') : (selectedLanguage==='ru' ? (document.body.classList.contains('about-page')?'О нас — Sansara Development':'Sansara Development — Жизнь в гармонии.') : (document.body.classList.contains('about-page')?'About Us — Sansara Development':'Sansara Development — A life well lived.'));
-  languageObserver.observe(document.body,{subtree:true,childList:true,characterData:true,attributes:true,attributeFilter:['aria-label','placeholder']});
+  languageObserver.observe(document.body,{subtree:true,childList:true,characterData:true,attributes:true,attributeFilter:['aria-label','placeholder','alt','title']});
 }
 document.querySelectorAll('.language-control').forEach(control => {
   const toggle = control.querySelector('.language-toggle');
