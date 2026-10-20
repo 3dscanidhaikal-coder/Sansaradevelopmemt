@@ -927,3 +927,8 @@ dialog.residence-lightbox{background:transparent}
 .phase-directory>.section-label>a{display:inline-flex;align-items:center;justify-content:center;gap:16px;min-height:44px;padding:12px 20px;border:1px solid var(--brand-blue);color:var(--brand-blue);font-size:12px;font-weight:600;line-height:1.4;letter-spacing:0;text-transform:none;transition:background .2s,color .2s}
 .phase-directory>.section-label>a:hover{background:var(--brand-blue);color:var(--white)}
 .phase-directory>.section-label>a .ui-arrow{width:18px;height:18px}
+/* Residence detail navigation matches the phase collection buttons. */
+#villa-details>.section-label{align-items:center;gap:20px}
+#villa-details>.section-label>a{display:inline-flex;align-items:center;justify-content:center;gap:16px;min-height:44px;padding:12px 20px;border:1px solid var(--brand-blue);color:var(--brand-blue);font-size:12px;font-weight:600;line-height:1.4;letter-spacing:0;text-transform:none;transition:background .2s,color .2s}
+#villa-details>.section-label>a:hover{background:var(--brand-blue);color:var(--white)}
+#villa-details>.section-label>a .ui-arrow{width:18px;height:18px}
