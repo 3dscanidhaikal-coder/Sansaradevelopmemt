@@ -533,7 +533,8 @@ document.querySelector('.floating-back')?.addEventListener('click', () => {
 });// Residence galleries open in a native modal with a contained keyboard focus.
 (() => {
   const galleries = [...document.querySelectorAll('.villa-gallery-grid')];
-  if (!galleries.length) return;
+  const floorPlans = [...document.querySelectorAll('.villa-floor-plan')];
+  if (!galleries.length && !floorPlans.length) return;
   const dialog = document.createElement('dialog');
   dialog.className = 'residence-lightbox';
   dialog.setAttribute('aria-label', 'Residence image gallery');
@@ -549,6 +550,7 @@ document.querySelector('.floating-back')?.addEventListener('click', () => {
     image.src = items[index].href;
     image.alt = items[index].querySelector('img')?.alt || '';
     count.textContent = `${index + 1} / ${items.length}`;
+    count.hidden = items.length < 2;
     previous.hidden = next.hidden = items.length < 2;
   };
   galleries.forEach(gallery => {
@@ -562,6 +564,23 @@ document.querySelector('.floating-back')?.addEventListener('click', () => {
         items = links;
         opener = link;
         show(position);
+        dialog.showModal();
+        document.body.classList.add('modal-open');
+      });
+    });
+  });
+  floorPlans.forEach(section => {
+    const plan = section.querySelector('.residence-floor-plan-image');
+    if (!plan) return;
+    section.querySelectorAll('a[href]').forEach(link => {
+      link.removeAttribute('target');
+      link.setAttribute('aria-haspopup', 'dialog');
+      link.addEventListener('click', event => {
+        if (event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return;
+        event.preventDefault();
+        items = [plan];
+        opener = link;
+        show(0);
         dialog.showModal();
         document.body.classList.add('modal-open');
       });
@@ -582,7 +601,7 @@ document.querySelector('.floating-back')?.addEventListener('click', () => {
     if (!insidePicture) dialog.close();
   });
   dialog.addEventListener('keydown', event => {
-    if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+    if (items.length > 1 && (event.key === 'ArrowLeft' || event.key === 'ArrowRight')) {
       event.preventDefault();
       show(index + (event.key === 'ArrowRight' ? 1 : -1));
     }
@@ -591,7 +610,7 @@ document.querySelector('.floating-back')?.addEventListener('click', () => {
   image.addEventListener('touchstart', event => { touchStart = event.changedTouches[0].clientX; }, { passive: true });
   image.addEventListener('touchend', event => {
     const distance = event.changedTouches[0].clientX - touchStart;
-    if (Math.abs(distance) > 55) show(index + (distance < 0 ? 1 : -1));
+    if (items.length > 1 && Math.abs(distance) > 55) show(index + (distance < 0 ? 1 : -1));
   }, { passive: true });
   dialog.addEventListener('close', () => {
     image.removeAttribute('src');
