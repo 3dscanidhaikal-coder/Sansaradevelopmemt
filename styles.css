@@ -932,3 +932,11 @@ dialog.residence-lightbox{background:transparent}
 #villa-details>.section-label>a{display:inline-flex;align-items:center;justify-content:center;gap:16px;min-height:44px;padding:12px 20px;border:1px solid var(--brand-blue);color:var(--brand-blue);font-size:12px;font-weight:600;line-height:1.4;letter-spacing:0;text-transform:none;transition:background .2s,color .2s}
 #villa-details>.section-label>a:hover{background:var(--brand-blue);color:var(--white)}
 #villa-details>.section-label>a .ui-arrow{width:18px;height:18px}
+/* Catalogue action follows the address, separate from the contact details. */
+.footer-top>.footer-contact>button.footer-catalogue-button{display:inline-flex;align-items:center;justify-content:center;gap:20px;min-height:44px;margin:22px 0 0;padding:12px 18px;border:1px solid var(--gold-light);color:var(--white);font-size:12px;font-weight:600;line-height:1.4;text-align:left;transition:background .2s,color .2s}
+.footer-top>.footer-contact>button.footer-catalogue-button:hover{background:var(--gold-light);color:var(--brand-blue)}
+.footer-catalogue-button .ui-arrow{width:18px;height:18px}
+@media(max-width:767px){
+ .footer-top>button.footer-catalogue-button{grid-column:1/-1;justify-self:start;display:inline-flex;align-items:center;justify-content:center;gap:20px;min-height:44px;margin:0;padding:12px 18px;border:1px solid var(--gold-light);color:var(--white);font-size:12px;font-weight:600;line-height:1.4;white-space:nowrap;text-align:left}
+ .footer-top>button.footer-catalogue-button:hover{background:var(--gold-light);color:var(--brand-blue)}
+}

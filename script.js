@@ -649,3 +649,20 @@ document.querySelector('.floating-back')?.addEventListener('click', () => {
     else record.addedNodes.forEach(replaceArrows);
   })).observe(document.body, { childList: true, characterData: true, subtree: true });
 })();
+// Give the catalogue action its own left-aligned row on mobile.
+(() => {
+  const mobile = matchMedia('(max-width: 767px)');
+  document.querySelectorAll('.footer-catalogue-button').forEach(button => {
+    const contact = button.closest('.footer-contact');
+    const footer = button.closest('.footer-top');
+    if (!contact || !footer) return;
+    const position = document.createComment('Catalogue desktop position');
+    contact.insertBefore(position, button);
+    const place = () => {
+      if (mobile.matches) footer.insertBefore(button, footer.querySelector('.footer-note'));
+      else contact.insertBefore(button, position.nextSibling);
+    };
+    mobile.addEventListener('change', place);
+    place();
+  });
+})();
